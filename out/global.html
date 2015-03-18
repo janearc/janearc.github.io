@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="cfg_iam_mfa_device"><span class="type-signature"></span>cfg_iam_mfa_device<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Create an IAM MFA device, and attach it to a user
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user to associate the device with</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line361">line 361</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promise containing the actual MFA data including seed - you'll need to write this yourself.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="create_iam_user"><span class="type-signature"></span>create_iam_user<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Create an IAM user
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the username for the user (e.g., JaneArc)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line316">line 316</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promise to a string containing the ARN of the user
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="create_sendak_user"><span class="type-signature"></span>create_sendak_user<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Create a Sendak user
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the (AWS) username for the user (e.g., JaneArc)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user's (given, sur) name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>github-id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user's github account id (e.g., janearc)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>arn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user's ARN (e.g.,arn:aws:iam::555555555555:user/JaneArc)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line288">line 288</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/18F/Sendak/blob/master/contrib/init-sendak-rm.js#L14">Sendak Schema</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promise to a Sendak user object
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="get_github_users"><span class="type-signature"></span>get_github_users<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Get users in github
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pattern</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a string or regexp to test the results with</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user name you wish to return, or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>org</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the github organisation the user(s) belongs to. (required)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cached</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">boolean, whether to actually check amazon or use cache.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line177">line 177</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promised array of objects with the requested users.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>get_github_users( {
+  'pattern': '[Jj]ane',
+  'user-name': true,
+  'org': '18F',
+} ).then( function (users) {
+  // Your users are here.
+} );</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="get_iam_users"><span class="type-signature"></span>get_iam_users<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Get users in iam.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pattern</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a string or regexp to test the results with</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user name you wish to return, or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>arn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the ARN or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user-id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the AWS userid or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cached</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">boolean, whether to actually check amazon or use cache.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line102">line 102</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promised array of objects with the requested fields/members.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>get_iam_users( {
+  'pattern': '[Jj]ane',
+  'user-name': true,
+  'arn': true,
+  'user-id': true,
+} ).then( function (users) {
+  // Your users are here.
+} );</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="get_sendak_users"><span class="type-signature"></span>get_sendak_users<span class="signature">(args)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Get users in sendak
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pattern</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">RegExp</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a string or regexp to test the results with</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user-name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the user name you wish to return, or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user-id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the AWS userid or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>given</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the given name or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>surname</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the surname or true for all.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>cached</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">boolean, whether to actually check amazon or use cache.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="sendak.js.html">sendak.js</a>, <a href="sendak.js.html#line228">line 228</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    an promised array of objects with the requested users.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>get_sendak_users( {
+  'pattern': '[Jj]ane',
+  'user-name': true,
+  'user-id': true,
+  'given': true,
+  'surname': true,
+} ).then( function (users) {
+  // Your users are here.
+} );</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#cfg_iam_mfa_device">cfg_iam_mfa_device</a></li><li><a href="global.html#create_iam_user">create_iam_user</a></li><li><a href="global.html#create_sendak_user">create_sendak_user</a></li><li><a href="global.html#get_github_users">get_github_users</a></li><li><a href="global.html#get_iam_users">get_iam_users</a></li><li><a href="global.html#get_sendak_users">get_sendak_users</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha13</a> on Wed Mar 18 2015 08:34:45 GMT-0400 (EDT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
